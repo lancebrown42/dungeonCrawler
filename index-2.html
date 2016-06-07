@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zorky</title>
+        <!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+        <script data-main="scripts/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"></script>
+    </head>
+
+	<body>
+		<div ng-controller = 'playerController as playerCtrl'>
+			<button ng-click = 'playerCtrl.move(north)'>North</button>
+			<button ng-click = 'playerCtrl.move(east)'>East</button>
+			<button ng-click = 'playerCtrl.move(south)'>South</button>
+			<button ng-click = 'playerCtrl.move(west)'>West</button>
+		</div>
+
+	<script type="text/javascript" src = 'main.js'></script>
+	</body>
+</html>
